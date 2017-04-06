@@ -10,7 +10,7 @@ class AppComponent extends React.Component {
           className="button"
           style={{ display: 'block', margin: '30px auto' }}
         >
-          Test Jenkins Github plugin
+          Test Jenkins Github plugin, this time test PR
         </button>
       </div>
     );
