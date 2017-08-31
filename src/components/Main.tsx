@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import 'styles/main.scss';
 
@@ -10,7 +10,7 @@ class AppComponent extends React.Component {
           className="button"
           style={{ display: 'block', margin: '30px auto' }}
         >
-          Test Jenkins Github plugin
+          Hello, Human
         </button>
       </div>
     );
