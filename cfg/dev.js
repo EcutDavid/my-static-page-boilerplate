@@ -1,6 +1,5 @@
 var webpack = require('webpack');
 var baseConfig = require('./base');
-var defaultSettings = require('./defaults');
 
 var config = Object.assign({}, baseConfig, {
   entry: [
@@ -21,8 +20,7 @@ var config = Object.assign({}, baseConfig, {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin()
-  ],
-  module: defaultSettings.getDefaultModules()
+  ]
 });
 
 module.exports = config;
