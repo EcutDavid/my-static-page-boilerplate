@@ -10,7 +10,7 @@ module.exports = {
     publicPath: './assets/'
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
       actions: srcPath + '/actions/',
       components: srcPath + '/components/',
@@ -63,6 +63,12 @@ module.exports = {
         test: /\.(js|jsx)$/,
         use: [
           'babel-loader'
+        ],
+        include: path.join(__dirname, '/../src')
+      }, {
+        test: /\.(ts|tsx)$/,
+        use: [
+          'ts-loader'
         ],
         include: path.join(__dirname, '/../src')
       }
